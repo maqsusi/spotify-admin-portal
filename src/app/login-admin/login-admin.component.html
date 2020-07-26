@@ -1,0 +1,28 @@
+
+<div class="nav-tabs topNav">
+    <div class = 'container'>
+    <h4>Spotify | Admin</h4>
+    
+    </div>
+    
+  </div>
+
+
+<div class="formContainer">
+
+    <form [formGroup] = "adminForm" (submit) = "adminLogin()">
+        <p *ngIf = "invalid" class = "invalid">*Please make sure you have entered valid details.</p>
+        <label for = 'username'>Enter Admin  Username:</label>
+        <input type = 'text' name = 'username' formControlName = 'Username'><br>
+
+        <label for = 'password'>Enter Admin Password:</label>
+        <input type = 'password' name = 'password' formControlName = 'Password'>
+        <br><br>
+
+        
+
+        <input type = "submit" value = "Login as Admin" class = "btn btn-primary">
+    </form>
+
+
+</div>

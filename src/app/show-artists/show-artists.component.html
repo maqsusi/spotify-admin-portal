@@ -1,0 +1,19 @@
+<app-options-bar></app-options-bar>
+
+<div class="tableContainer">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Artist ID</th>
+                <th scope="col">Artist Name</th>
+            </tr>
+        </thead>
+        <tr scope="row" *ngFor = "let artist of artists">
+            <td>{{artist.id}}</td>
+            <td>{{artist.artistName}}</td>
+            
+            
+            
+        </tr>
+    </table>
+</div>

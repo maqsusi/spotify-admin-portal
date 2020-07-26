@@ -1,0 +1,25 @@
+<app-options-bar></app-options-bar>
+
+<div class="tableContainer">
+    <table class="table table-striped table1">
+        
+            <tr>
+                <th>Song ID</th>
+                <th>Song Name</th>
+                <th>Song Path</th>
+                <th>Artist Name</th>
+                <th>Artist ID</th>
+                <th></th>
+            </tr>
+        
+        <tr *ngFor = "let song of allSongs">
+            <td>{{song.songId}}</td>
+            <td>{{song.songName}}</td>
+            <td>{{song.songPath}}</td>
+            <td>{{song.artistName}}</td>
+            <td>{{song.artistId}}</td>
+            
+            
+        </tr>
+    </table>
+</div>

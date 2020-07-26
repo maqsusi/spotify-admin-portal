@@ -1,0 +1,19 @@
+.invalid
+{
+    color: red;
+}
+
+.container
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+form
+{
+    border: 1px solid black;
+    display:inline-block;
+    width: 36%;
+    padding: 10px;
+    text-align: left;
+}

@@ -1,0 +1,17 @@
+<app-options-bar></app-options-bar>
+
+<div class = "container">
+    <form [formGroup] = "artistForm" (submit) = "addArtist()">
+        <p *ngIf = "invalid" class = "invalid">*Some error occured. Please make sure you have entered valid details.</p>
+        <label for = 'artistName'>Enter Artist Name:</label><br>
+        <input type = 'text' name = 'artistName' formControlName = 'artistName'>
+        <br><br>
+
+        
+
+        <input type = "submit" value = "Add Artist" class = "btn btn-primary">
+
+
+
+    </form>
+</div>

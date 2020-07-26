@@ -1,0 +1,25 @@
+<app-options-bar></app-options-bar>
+
+<div class="containerDiv">
+    <p>*Please add songs only for Artists that already exist. Adding Artist ID of artists that do not exist in the <a routerLink = "/Artists">Artists</a> tab will cause an error.</p>
+    <form [formGroup]="songForm" (submit)="addSong()">
+        <p *ngIf="invalid" class="invalid">*Please enter valid details and make sure that Artist ID is for an artist
+            that already exists in database!</p>
+        <label for='songName'>Enter Song Name:</label>
+        <input type='text' name='songName' formControlName='songName'>
+        <br><br>
+
+        <label for='path'>Enter Song Path:</label>
+        <input type='text' name='songName' formControlName='path'>
+        <br><br>
+        <label for='artistId'>Enter Artist ID of Artist who made the Song:</label>
+        <input type='number' name='songName' formControlName='artistId'>
+        <br><br>
+
+        <input type="submit" value="Add Song" class = "btn btn-primary">
+
+
+
+    </form>
+
+</div>
