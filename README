@@ -1,0 +1,9 @@
+Pointers for the Admin UI:
+
+Admin credentials are as follows:
+1. Username - 'admin'
+2. Password - 'admin'
+
+When adding songs, please make sure that the song is being added for an existing artist. Adding a song for an artist that doesn't exist in the database will throw an error. Refer to the "View all Artists" tab in the UI to see artists that exist in the database.
+
+When adding URL of a song, please make sure that the URL doesn't have an leading and trailing spaces.
